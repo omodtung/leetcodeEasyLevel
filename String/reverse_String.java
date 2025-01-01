@@ -5,7 +5,8 @@ import java.util.Collections;
 import java.util.List;
 
 public class reverse_String {
-     static String reverseWords(String str) {
+    
+        static String reverseWords(String str) {
         
         // Split the input string by '.' while 
         // ignoring multiple consecutive dots
@@ -26,6 +27,9 @@ public class reverse_String {
         // Join the reversed words back into a string
         return String.join(".", words);
     }
+
+        
+    
 
   
 }
