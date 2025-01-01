@@ -27,8 +27,5 @@ public class reverse_String {
         return String.join(".", words);
     }
 
-    public static void main(String[] args) {
-        String str = "..geeks..for.geeks.";
-        System.out.println(reverseWords(str));
-    }
+  
 }
