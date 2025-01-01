@@ -5,9 +5,21 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class twoSumHashMap {
-
+//fix the error in this code
     public static int[] twoSum(int[] nums, int target) {
-        Map<Integer, Integer> complements = new HashMap<>();
+        Map<Integer, Integer> map = new HashMap<>();
+        for (int i = 0; i < nums.length; i++) {
+            int complement = target - nums[i];
+            if (map.containsKey(complement)) {
+                return new int[] { map.get(complement), i };
+            }
+            map.put(nums[i], i);
+        }
+        throw new IllegalArgumentException("No two sum solution");
+    }
+
+    public static int[] twoSumTEST(int[] nums, int target) {
+        // Map<Integer, Integer> complements = new HashMap<>();
         for (int i = 0; i < nums.length; i++) {
             Integer complementIndex = complements.get(nums[i]);
             System.out.println("adu"+nums[i]);

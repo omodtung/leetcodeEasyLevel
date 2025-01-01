@@ -1,0 +1,26 @@
+for( int i = arr.length ;i>= 0 ;i--)
+int rightmax = -1
+
+int newMax = math.max(rightmax,arr[5])
+arr[5] = rightMax;
+ rightmax = newmax ;
+}
+return arr;
+}}
+
+example
+17,18,5,6,4
+
+int newMax = math.max(-1,5)
+arr[5] = -1;
+-1 = newmax
+
+
+newmax = arr[4]
+
+arr[4] = rightmax;
+rigntmax = newMax
+
+4= -1 
+-1 = 4
+
